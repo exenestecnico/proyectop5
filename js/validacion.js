@@ -13,3 +13,12 @@ function validarAuth() {
 
     return true;
 }
+
+function isSearchEmpty(){
+  let search = document.getElementById("search").value;
+  if (search == null || /^\s+$/.test(search) || search.length == 0)  {
+    return false;
+  }
+  
+  return true;
+}
