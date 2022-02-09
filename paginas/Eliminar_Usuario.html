@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/floating-labels.css" rel="stylesheet">
+    <link href="../css/style.css" type="text/css" rel="stylesheet">
+    <script src="../js/datos.js"></script>
+    <title>Eliminar_Usuario</title>
+</head>
+<body>
+<form class="form-signin" role="form" onsubmit="return salvarDatos()" id="insertar_usuario">
+    <div class="text-center mb-4">
+        <h1 class="h3 mb-3 font-weight-auto " style="color: #a52834">Eliminar Usuario</h1>
+    </div>
+    <div class="form-label-group">
+        <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre Completo" required autofocus>
+        <label for="nombre">Nombre Completo</label>
+    </div>
+
+    <div class="form-label-group">
+        <input type="text" name="usuario" id="usuario" class="form-control" placeholder="usuario" required>
+        <label for="usuario">Usuario</label>
+    </div>
+    <div class="form-label-group">
+        <input type="password" name="pass" id="pass" class="form-control" placeholder="Contraseña" required>
+        <label for="pass">Contraseña</label>
+    </div>
+    <select class="form-select" aria-label="Default select example">
+        <option selected>roles</option>
+        <option value="1">Administrador</option>
+        <option value="2">Comision Cientifico-Tecnica</option>
+        <option value="3">Recursos Humanos</option>
+    </select>
+    <div class="d-grid gap-2 col-form-label-lg mx-auto">
+        <button class="btn btn-lg btn-danger btn-block " type="submit" name="eliminar">Aceptar</button>
+        <a class="btn btn-lg btn-outline-danger btn-block" href="Usuario.html" role="button">Cancelar</a>
+
+    </div>
+
+
+</form>
+
+</body>
+</html>

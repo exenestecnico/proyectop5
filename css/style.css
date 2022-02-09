@@ -1,0 +1,27 @@
+main p {
+    font-size: small;
+}
+
+main h1 {
+    font-size: small;
+}
+
+main h2 {
+    font-size: small;
+}
+
+footer {
+    font-size: smaller;
+    align-content: center;
+
+}
+
+#error {
+    color: red !important;
+    visibility: hidden;
+
+}
+
+#tableUserSearch {
+    float: right;
+}

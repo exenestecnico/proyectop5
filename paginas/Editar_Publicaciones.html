@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Editar Publicaciones</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/floating-labels.css" rel="stylesheet">
+    <link href="../css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+<form class="form-signin" role="form" id="insertar_publicaciones">
+    <div class="text-center mb-4">
+        <h1 class="h3 mb-3 font-weight-auto " style="color: #a52834">Editar</h1>
+    </div>
+    <div class="form-label-group">
+        <input type="text" id="autor" name="autor" class="form-control" placeholder="autor" required autofocus>
+        <label for="Autor">Autor</label>
+    </div>
+
+    <div class="form-label-group">
+        <input type="date" name="fecha" id="fecha" class="form-control" placeholder="Fecha" required>
+        <label for="Fecha">Fecha</label>
+    </div>
+    <div class="form-label-group">
+        <input type="text" name="titulo" id="titulo" class="form-control" placeholder="Titulo" required>
+        <label for="titulo">Titulo</label>
+    </div>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Documento" aria-label="Documento" aria-describedby="Documento">
+        <button class="btn btn-outline-danger" type="button" id="documento">Seleccionar</button>
+    </div>
+    <div class="d-grid gap-2 col-form-label-lg mx-auto">
+        <button class="btn btn-lg btn-danger btn-block " type="submit" name="insertar">Editar</button>
+        <a class="btn btn-lg btn-outline-danger btn-block" href="Publicaciones.html" role="button">Volver a Publicaciones</a>
+
+    </div>
+
+
+</form>
+
+
+
+</body>
+</html>

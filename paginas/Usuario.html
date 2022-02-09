@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Gestión de Usuarios</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script rel="script" type="text/javascript" src="../js/bootstrap.bundle.js"></script>
+</head>
+
+<body>
+
+<header>
+    <nav role="navigation" class="navbar navbar-expand-md bg-primary navbar-dark">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+                <ul class="navbar-nav">
+                    <li class="nav-link">
+                        Inicio
+                    </li>
+                    <li class="nav-link">
+                        Autenticar Usuario
+                    </li>
+
+                    <li class="nav-link">
+                        Publicaciones Cienttíficas
+                    </li>
+
+                    <li class="nav-link">
+                        Solicitudes
+                    </li>
+
+                    <li class="nav-link active" aria-current="page">
+                        Usuarios
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+</header>
+
+<main>
+    <div class="container">
+
+        <!-- Insertar, Editar y Eliminar -->
+        <div class="row mt-2 mt-sm-3 mt-md-4 mt-xl-5 align-items-center">
+            <div class="container col-sm-6 mb-1">
+
+                <a href="#Insertar" class="btn btn-primary btn-sm" data-toggle="modal">
+                    <span>Insertar</span>
+                </a>
+
+                <a href="#Editar" class="btn btn-primary btn-sm" data-toggle="modal">
+                    <span>Editar</span>
+                </a>
+
+                <a href="#Insertar" class="btn btn-primary btn-sm">
+                    <span>Eliminar</span>
+                </a>
+            </div>
+
+            <div class="container col-sm-6 text-sm-end mb-1">
+                <!-- Buscar -->
+
+                <input class="w-50 sm btn-sm form-control-sm" type="search"/>
+
+                <button class="btn btn-primary btn-sm" type="submit"
+                        onclick="#acc">
+                    Buscar
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Tabla -->
+        <div class="row mt-1 mt-sm-2 mt-md-3 mb-5">
+
+            <div class="container col-12">
+
+                <table class="table table-striped table-responsive">
+                    <thead>
+                    <tr>
+                        <td scope="col"></td>
+                        <td scope="col">Usuario</td>
+                        <td scope="col">Nombre Completo</td>
+                        <td scope="col">Rol</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                       id="flexRadioDefault1">
+                            </div>
+                        </th>
+                        <td>jedel</td>
+                        <td>Jorge Garcia Sanchez</td>
+                        <td>Administrador</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                       id="flexRadioDefault2">
+                            </div>
+                        </th>
+                        <td>ruby</td>
+                        <td>Ruby Hernandez Gonzalez</td>
+                        <td>Usuario</td>
+                    </tr>
+                    <th scope="row">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                        </div>
+                    </th>
+                    <td>ernesto</td>
+                    <td>Ernesto Garcia Xenes</td>
+                    <td>Usuario</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="row justify-content-center">
+        <div class="container-fluid bg-primary text-center text-light col-12">
+            Todos los derechos reservados
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>
